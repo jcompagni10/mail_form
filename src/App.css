@@ -1,0 +1,142 @@
+body {
+  background-color: #e07825;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+
+h3 {
+  font-weight: 400;
+  margin-bottom: 25px; }
+
+.emoji {
+  font-size: 34px;
+  margin-left: 10px;
+  top: 5px;
+  position: relative; }
+
+.mail-form {
+  width: 500px;
+  margin: 120px auto 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 10px 10px 25px -2px rgba(0, 0, 0, 0.3); }
+
+input {
+  border: none;
+  border-bottom: 1px solid gainsboro;
+  outline-width: 0;
+  font-weight: 600;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 18px; }
+
+input[disabled] {
+  background: none;
+  opacity: 0.5; }
+
+input::placeholder {
+  color: gainsboro;
+  font-size: 18px;
+  font-weight: 400; }
+
+input:last-of-type {
+  border-bottom: none; }
+
+.btn-wrapper {
+  height: 40px;
+  width: 140px;
+  position: relative;
+  margin-top: 20px;
+  background-color: gainsboro;
+  border-radius: 40px;
+  overflow: hidden; }
+
+.border-cover {
+  position: absolute;
+  background: #e07825;
+  transition: 1s width ease-in-out; }
+
+.cover1 {
+  top: 20px;
+  width: 0;
+  height: 20px; }
+
+.cover2 {
+  bottom: 20px;
+  right: 0;
+  height: 20px;
+  width: 0; }
+
+.btn-text {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gainsboro;
+  pointer-events: none; }
+
+.progress1 .cover1 {
+  width: 100px;
+  transition-delay: 1s; }
+
+.progress2 .cover1 {
+  width: 140px;
+  transition: 0.66s width ease-in; }
+
+.progress2 .cover2 {
+  width: 50px;
+  transition: 1s width ease-out;
+  transition-delay: 0.66s; }
+
+.progress3 .cover2 {
+  width: 140px; }
+
+.progress3 .cover1 {
+  width: 140px; }
+
+.progress3 .btn-text {
+  animation: text-change;
+  animation-fill-mode: forwards;
+  animation-duration: 2s; }
+
+.progress3 .send-btn {
+  cursor: pointer; }
+
+@keyframes text-change {
+  0% {
+    color: gainsboro; }
+  50% {
+    color: #e07825; }
+  100% {
+    color: #fff; } }
+
+.btn-circle {
+  pointer-events: none;
+  position: absolute;
+  background: #e07825;
+  top: 13px;
+  left: 63px;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  transform: scale(1);
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 1s; }
+
+.progress3 .btn-circle {
+  transform: scale(10);
+  opacity: 1; }
+
+.send-btn {
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 1px;
+  height: 38px;
+  width: 138px;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  background: #fff; }
